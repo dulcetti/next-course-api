@@ -1,8 +1,8 @@
 {
-  "name": "app",
+  "name": "papodebar-api",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "An example of Strapi application",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -24,7 +24,7 @@
     "pg": "latest"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Bruno Dulcetti"
   },
   "strapi": {
     "uuid": "d760f3e6-ee84-40b7-9b67-8d386256fc67"
