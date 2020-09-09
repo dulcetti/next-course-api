@@ -1,20 +1,20 @@
 {
-  "collectionName": "components_page_banners",
+  "collectionName": "components_page_abouts",
   "info": {
-    "name": "banner",
-    "icon": "photo-video"
+    "name": "About",
+    "icon": "address-card"
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string",
       "required": true,
-      "maxLength": 80
+      "maxLength": 50
     },
     "description": {
-      "type": "text",
+      "type": "richtext",
       "required": true,
-      "maxLength": 200
+      "maxLength": 400
     },
     "background": {
       "model": "file",
@@ -24,11 +24,6 @@
       ],
       "plugin": "upload",
       "required": true
-    },
-    "button": {
-      "type": "component",
-      "repeatable": false,
-      "component": "page.button"
     }
   }
 }

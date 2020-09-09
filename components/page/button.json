@@ -8,9 +8,9 @@
   "attributes": {
     "label": {
       "type": "string",
-      "default": "Eu quero!",
+      "required": true,
       "maxLength": 20,
-      "required": true
+      "default": "Eu quero!"
     },
     "url": {
       "type": "string",

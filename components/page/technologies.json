@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_page_technologies",
+  "info": {
+    "name": "technologies",
+    "icon": "database"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 80
+    },
+    "techs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.techs",
+      "required": true,
+      "max": 10,
+      "min": 6
+    }
+  }
+}
