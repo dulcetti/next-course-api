@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_page_price_boxes",
+  "info": {
+    "name": "priceBox",
+    "icon": "dollar-sign"
+  },
+  "options": {},
+  "attributes": {
+    "totalValue": {
+      "type": "integer"
+    },
+    "installmentsNumber": {
+      "type": "integer",
+      "required": true
+    },
+    "installmentPrice": {
+      "type": "integer",
+      "required": true
+    },
+    "list": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.list",
+      "required": true
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.button",
+      "required": true
+    }
+  }
+}

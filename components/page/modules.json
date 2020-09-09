@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_page_modules",
+  "info": {
+    "name": "modules",
+    "icon": "square-full"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "moduleItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.module-item",
+      "required": true,
+      "min": 2,
+      "max": 6
+    }
+  }
+}

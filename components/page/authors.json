@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_page_authors",
+  "info": {
+    "name": "authors",
+    "icon": "user-friends"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 63
+    },
+    "authors": {
+      "collection": "authors"
+    }
+  }
+}

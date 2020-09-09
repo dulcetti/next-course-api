@@ -35,6 +35,47 @@
       "repeatable": false,
       "component": "page.technologies",
       "required": true
+    },
+    "concepts": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.concepts",
+      "required": true
+    },
+    "modules": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.modules",
+      "required": true
+    },
+    "agenda": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.agenda",
+      "required": true
+    },
+    "priceBox": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.price-box",
+      "required": true
+    },
+    "authors": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.authors"
+    },
+    "reviews": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.reviews",
+      "min": 4,
+      "required": true
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.faq"
     }
   }
 }
