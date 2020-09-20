@@ -7,15 +7,12 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true,
-      "maxLength": 80
+      "type": "string"
     },
-    "conceptsList": {
+    "conceptItems": {
       "type": "component",
-      "repeatable": false,
-      "component": "page.concepts-list",
-      "required": true
+      "repeatable": true,
+      "component": "page.concept-items"
     }
   }
 }

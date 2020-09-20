@@ -2,7 +2,7 @@
   "kind": "singleType",
   "collectionName": "landing_pages",
   "info": {
-    "name": "Landing Page"
+    "name": "landingPage"
   },
   "options": {
     "increments": true,
@@ -10,55 +10,44 @@
   },
   "attributes": {
     "branding": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": true
+      "type": "component",
+      "repeatable": false,
+      "component": "page.branding"
     },
     "banner": {
       "type": "component",
       "repeatable": false,
-      "component": "page.banner",
-      "required": true
+      "component": "page.banner"
     },
     "about": {
       "type": "component",
       "repeatable": false,
-      "component": "page.about",
-      "required": true
+      "component": "page.about"
     },
     "technologies": {
       "type": "component",
       "repeatable": false,
-      "component": "page.technologies",
-      "required": true
+      "component": "page.technologies"
     },
     "concepts": {
       "type": "component",
       "repeatable": false,
-      "component": "page.concepts",
-      "required": true
+      "component": "page.concepts"
     },
     "modules": {
       "type": "component",
       "repeatable": false,
-      "component": "page.modules",
-      "required": true
+      "component": "page.modules"
     },
     "agenda": {
       "type": "component",
       "repeatable": false,
-      "component": "page.agenda",
-      "required": true
+      "component": "page.agenda"
     },
     "priceBox": {
       "type": "component",
       "repeatable": false,
-      "component": "page.price-box",
-      "required": true
+      "component": "page.price-box"
     },
     "authors": {
       "type": "component",
@@ -67,10 +56,8 @@
     },
     "reviews": {
       "type": "component",
-      "repeatable": true,
-      "component": "page.reviews",
-      "min": 4,
-      "required": true
+      "repeatable": false,
+      "component": "page.reviews"
     },
     "faq": {
       "type": "component",

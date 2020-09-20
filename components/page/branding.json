@@ -1,17 +1,12 @@
 {
-  "collectionName": "components_page_techs",
+  "collectionName": "components_page_brandings",
   "info": {
-    "name": "techs",
-    "icon": "charging-station"
+    "name": "branding",
+    "icon": "heart"
   },
   "options": {},
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true,
-      "maxLength": 20
-    },
-    "image": {
+    "logo": {
       "model": "file",
       "via": "related",
       "allowedTypes": [

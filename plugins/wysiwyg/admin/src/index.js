@@ -1,59 +1,29 @@
-import React from "react";
-import PropTypes from "prop-types";
-import CKEditor from "@ckeditor/ckeditor5-react";
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
-import styled from "styled-components";
+import pluginPkg from "../../package.json";
+import Wysiwyg from "./components/Wysiwyg";
+import pluginId from "./pluginId";
 
-const Wrapper = styled.div`
-  .ck-editor__main {
-    min-height: 200px;
-    > div {
-      min-height: 200px;
-    }
-  }
-`;
+export default (strapi) => {
+  const pluginDescription =
+    pluginPkg.strapi.description || pluginPkg.description;
 
-const configuration = {
-  toolbar: [
-    "heading",
-    "|",
-    "bold",
-    "italic",
-    "link",
-    "bulletedList",
-    "numberedList",
-    "|",
-    "indent",
-    "outdent",
-    "|",
-    "blockQuote",
-    "insertTable",
-    "mediaEmbed",
-    "undo",
-    "redo",
-  ],
+  const plugin = {
+    blockerComponent: null,
+    blockerComponentProps: {},
+    description: pluginDescription,
+    icon: pluginPkg.strapi.icon,
+    id: pluginId,
+    initializer: () => null,
+    injectedComponents: [],
+    isReady: true,
+    isRequired: pluginPkg.strapi.required || false,
+    mainComponent: null,
+    name: pluginPkg.strapi.name,
+    preventComponentRendering: false,
+    settings: null,
+    trads: {},
+  };
+
+  strapi.registerField({ type: "wysiwyg", Component: Wysiwyg });
+
+  return strapi.registerPlugin(plugin);
 };
-
-const Editor = ({ onChange, name, value }) => {
-  return (
-    <Wrapper>
-      <CKEditor
-        editor={ClassicEditor}
-        config={configuration}
-        data={value}
-        onChange={(event, editor) => {
-          const data = editor.getData();
-          onChange({ target: { name, value: data } });
-        }}
-      />
-    </Wrapper>
-  );
-};
-
-Editor.propTypes = {
-  onChange: PropTypes.func.isRequired,
-  name: PropTypes.string.isRequired,
-  value: PropTypes.string,
-};
-
-export default Editor;

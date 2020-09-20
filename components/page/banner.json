@@ -2,19 +2,15 @@
   "collectionName": "components_page_banners",
   "info": {
     "name": "banner",
-    "icon": "photo-video"
+    "icon": "image"
   },
   "options": {},
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true,
-      "maxLength": 80
+      "type": "string"
     },
     "description": {
-      "type": "text",
-      "required": true,
-      "maxLength": 200
+      "type": "text"
     },
     "background": {
       "model": "file",
@@ -23,7 +19,7 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true
+      "required": false
     },
     "button": {
       "type": "component",

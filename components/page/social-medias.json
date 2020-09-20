@@ -15,12 +15,10 @@
         "Linkedin",
         "Facebook"
       ],
-      "default": "Github",
-      "required": true
+      "default": "Github"
     },
     "url": {
-      "type": "string",
-      "required": true
+      "type": "string"
     }
   }
 }

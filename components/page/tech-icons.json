@@ -1,19 +1,16 @@
 {
-  "collectionName": "components_page_abouts",
+  "collectionName": "components_page_tech_icons",
   "info": {
-    "name": "about",
-    "icon": "address-card"
+    "name": "techIcons",
+    "icon": "charging-station"
   },
   "options": {},
   "attributes": {
-    "title": {
+    "name": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
-    "background": {
-      "collection": "file",
+    "image": {
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"

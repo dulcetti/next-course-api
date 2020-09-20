@@ -7,13 +7,10 @@
   "options": {},
   "attributes": {
     "question": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "answer": {
-      "type": "richtext",
-      "required": true,
-      "maxLength": 800
+      "type": "richtext"
     }
   }
 }

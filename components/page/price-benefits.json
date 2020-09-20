@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_page_price_benefits",
+  "info": {
+    "name": "priceBenefits",
+    "icon": "th-list"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    }
+  }
+}

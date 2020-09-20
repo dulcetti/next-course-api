@@ -1,12 +1,15 @@
 {
-  "collectionName": "components_page_agenda",
+  "collectionName": "components_page_module_items",
   "info": {
-    "name": "agenda",
-    "icon": "calendar"
+    "name": "moduleItems",
+    "icon": "sitemap"
   },
   "options": {},
   "attributes": {
     "title": {
+      "type": "string"
+    },
+    "subtitle": {
       "type": "string"
     },
     "description": {

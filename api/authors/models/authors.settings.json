@@ -16,26 +16,21 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true
+      "required": false
     },
     "name": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "role": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "socialMedias": {
       "type": "component",
       "repeatable": true,
-      "component": "page.social-medias",
-      "required": true
+      "component": "page.social-medias"
     },
     "description": {
-      "type": "richtext",
-      "required": true,
-      "maxLength": 400
+      "type": "text"
     }
   }
 }

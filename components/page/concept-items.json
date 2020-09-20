@@ -1,9 +1,13 @@
 {
   "collectionName": "components_page_concept_items",
   "info": {
-    "name": "conceptItem",
+    "name": "conceptItems",
     "icon": "list"
   },
   "options": {},
-  "attributes": {}
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
 }

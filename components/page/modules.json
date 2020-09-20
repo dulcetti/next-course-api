@@ -7,16 +7,14 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "string",
-      "maxLength": 80
+      "type": "string"
     },
-    "moduleItem": {
+    "moduleItems": {
       "type": "component",
       "repeatable": true,
-      "component": "page.module-item",
-      "required": true,
-      "min": 2,
-      "max": 6
+      "component": "page.module-items",
+      "max": 6,
+      "min": 2
     }
   }
 }

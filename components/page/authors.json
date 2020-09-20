@@ -2,14 +2,12 @@
   "collectionName": "components_page_authors",
   "info": {
     "name": "authors",
-    "icon": "user-friends"
+    "icon": "user-astronaut"
   },
   "options": {},
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true,
-      "maxLength": 63
+      "type": "string"
     },
     "authors": {
       "collection": "authors"

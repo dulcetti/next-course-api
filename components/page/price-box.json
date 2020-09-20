@@ -10,24 +10,20 @@
       "type": "integer"
     },
     "installmentsNumber": {
-      "type": "integer",
-      "required": true
+      "type": "integer"
     },
     "installmentPrice": {
-      "type": "integer",
-      "required": true
+      "type": "integer"
     },
-    "list": {
+    "priceBenefits": {
       "type": "component",
-      "repeatable": false,
-      "component": "page.list",
-      "required": true
+      "repeatable": true,
+      "component": "page.price-benefits"
     },
     "button": {
       "type": "component",
       "repeatable": false,
-      "component": "page.button",
-      "required": true
+      "component": "page.button"
     }
   }
 }

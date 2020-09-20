@@ -7,17 +7,14 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true,
-      "maxLength": 80
+      "type": "string"
     },
-    "techs": {
+    "techIcons": {
       "type": "component",
       "repeatable": true,
-      "component": "page.techs",
-      "required": true,
+      "component": "page.tech-icons",
       "max": 10,
-      "min": 6
+      "min": 5
     }
   }
 }

@@ -12,13 +12,15 @@
     "@ckeditor/ckeditor5-react": "^2.1.0"
   },
   "author": {
-    "name": "Bruno Dulcetti",
-    "url": "https://www.brunodulcetti.com"
+    "name": "A Strapi developer",
+    "email": "",
+    "url": ""
   },
   "maintainers": [
     {
-      "name": "Bruno Dulcetti",
-      "url": "https://www.brunodulcetti.com"
+      "name": "A Strapi developer",
+      "email": "",
+      "url": ""
     }
   ],
   "engines": {
